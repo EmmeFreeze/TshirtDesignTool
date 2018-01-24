@@ -213,10 +213,7 @@ var TShirtDesignTool = ( function () {
                 TShirtDesignTool.showPanel('upload-image-panel');
             });
 
-            $("#btnPersonalize").click(function (e) {
-                TShirtDesignTool.showPanel('personalization-panel');
-                TShirtDesignTool.isPersonalizationMode = true;
-            });
+
 
             $("#btnSaveDesign").click(function (e) {
                 TShirtDesignTool.isPersonalizationMode = false;
@@ -517,8 +514,8 @@ var TShirtDesignTool = ( function () {
         'clip-art-panel',
         'upload-image-panel',
         'edit-clipart-panel',
-        'chooseTShirtPanel',
-        'personalization-panel'
+        'chooseTShirtPanel'
+
     ],
         tempDesignData : [
         {
@@ -556,4 +553,3 @@ $(document).ready(function () {
     TShirtDesignTool.init();
     $(document).foundation();
 });
-
